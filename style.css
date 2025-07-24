@@ -2,13 +2,14 @@
 .container {
   max-width: 1140px;
   margin: auto 150px;
-  
+  /* gap: 120px; */
 }
-.text-color1{
-    color: rgba(37, 36, 50, 1);
+
+.text-color1 {
+  color: rgba(37, 36, 50, 1);
 }
-.text-color2{
-    color: rgba(137, 135, 161, 1);
+.text-color2 {
+  color: rgba(137, 135, 161, 1);
 }
 
 /* Navbar */
@@ -17,36 +18,83 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  /* gap: 120px; */
+  margin-bottom: 120px;
 }
 
-.nav-item{
-    list-style: none;
-    margin-right: 30px;
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
 }
 
-.nav-link{
-    display: flex;
-    text-decoration: none;
-    font-weight: 500;
-
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
 }
-.cart{
-    list-style: none;
-    margin-right: 30px;
+.cart {
+  list-style: none;
+  margin-right: 30px;
 }
-
-
+/* banner section */
+.banner {
+  display: flex;
+  /* max-height: 460px; */
+  /* margin-top: 200px; */
+}
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.text {
+  /* flex: 1; */
+  padding-top: 150px;
+  min-width: 570px;
+  min-height: 300px;
+}
+.text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.text p {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+}
+.text .highlight {
+  color: #e95a08;
+  font-weight: bold;
+}
+.image {
+  /* flex: 1; */
+  padding-top: 100px;
+  text-align: right;
+  min-width: 300px;
+}
+.image img {
+  width: 100%;
+  /* height: auto; */
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .container{
-        max-width: 360px;
-        margin: auto;
-    }
-    .navbar{
-        justify-content: space-between;
-    }
-    .nav-item{
-        display: none;
-    }
+  .container {
+    max-width: 360px;
+    margin: auto;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .nav-item {
+    display: none;
+  }
+  .banner-content {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .text{
+    flex-wrap: wrap;
+  }
 }
