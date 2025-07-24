@@ -1,0 +1,52 @@
+/* Common style */
+.container {
+  max-width: 1140px;
+  margin: auto 150px;
+  
+}
+.text-color1{
+    color: rgba(37, 36, 50, 1);
+}
+.text-color2{
+    color: rgba(137, 135, 161, 1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.cart{
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 360px;
+        margin: auto;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-item{
+        display: none;
+    }
+}
