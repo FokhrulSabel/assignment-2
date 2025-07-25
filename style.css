@@ -239,6 +239,71 @@
   font-weight: bold;
   border-radius: 5px;
 }
+/* Join section */
+
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  font-size: 0.8rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.footer-left p {
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+}
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  min-width: 250px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #E95A08;
+}
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  min-width: 150px;
+}
+.footer-icons img {
+  height: 24px;
+  width: 24px;
+  transition: transform 0.3s ease;
+}
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -315,5 +380,19 @@
   }
   .zabo > .overlay h3{
     font-size: 1.25rem;
+  }
+
+  /* footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-icons {
+    margin-top: 20px;
   }
 }
