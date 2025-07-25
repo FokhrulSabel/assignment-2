@@ -17,7 +17,7 @@
 .text-color4 {
   color: rgba(0, 0, 0, 0.5);
 }
-.text-color5{
+.text-color5 {
   color: rgba(0, 0, 0, 1);
 }
 .btn-common {
@@ -167,7 +167,7 @@
   /* gap: 120px; */
 }
 .deals-text h2 {
-  color:#E95A08;
+  color: #e95a08;
   font-weight: 700;
   font-size: 3.1rem;
   line-height: 4.2rem;
@@ -195,7 +195,9 @@
   gap: 25px;
 }
 
-.zabo, .bloom, .ana {
+.zabo,
+.bloom,
+.ana {
   position: relative;
   border-radius: 14px;
   overflow: hidden;
@@ -234,18 +236,67 @@
 
 .cta-button {
   margin-top: 15px;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   color: white;
   font-weight: bold;
   border-radius: 5px;
 }
 /* Join section */
-
+.join {
+  background-image: url("assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+.join-bg {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.join h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.join form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.join input {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.join button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e95a08;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.join button:hover {
+  background-color: #e95a08;
+}
 
 /* Footer */
 .footer {
   padding: 40px 20px;
   font-size: 0.8rem;
+  /* margin-bottom: 120px; */
 }
 
 .footer-content {
@@ -287,7 +338,7 @@
   transition: color 0.3s;
 }
 .footer-links a:hover {
-  color: #E95A08;
+  color: #e95a08;
 }
 .footer-icons {
   display: flex;
@@ -303,7 +354,6 @@
 .footer-icons img:hover {
   transform: scale(1.1);
 }
-
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -359,15 +409,15 @@
     font-size: 1.5rem;
   }
   /* Latest Deal */
-  .deals-text{
+  .deals-text {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .deals-text h2{
+  .deals-text h2 {
     font-size: 1.5rem;
   }
-  .deals-text p{
-    font-size: .8rem;
+  .deals-text p {
+    font-size: 0.8rem;
   }
   .photo-card {
     flex-direction: column;
@@ -378,8 +428,26 @@
     width: 100%;
     max-width: 367px;
   }
-  .zabo > .overlay h3{
+  .zabo > .overlay h3 {
     font-size: 1.25rem;
+  }
+  /* Join */
+  .join-bg {
+    padding: 1.5rem;
+  }
+
+  .join h2 {
+    font-size: 1.25rem;
+  }
+  .join form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .join input,
+  .join button {
+    /* width: 100%; */
+    max-width: 100%;
   }
 
   /* footer */
